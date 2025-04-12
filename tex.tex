@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+
+\section*{Integral of $(3x)^2$}
+
+Here are the step-by-step instructions to find the integral of $(3x)^2$:
+
+\begin{enumerate}
+    \item \textbf{Expand the integrand:}
+    The first step is to simplify the expression inside the integral by squaring the term $(3x)$.
+    $$ (3x)^2 = 3^2 \cdot x^2 = 9x^2 $$
+    So, the integral becomes:
+    $$ \int (3x)^2 \, dx = \int 9x^2 \, dx $$
+
+    \item \textbf{Apply the constant multiple rule:}
+    The constant multiple rule for integration states that the integral of a constant times a function is equal to the constant times the integral of the function. In this case, the constant is 9.
+    $$ \int 9x^2 \, dx = 9 \int x^2 \, dx $$
+
+    \item \textbf{Apply the power rule for integration:}
+    The power rule for integration states that for any real number $n \neq -1$,
+    $$ \int x^n \, dx = \frac{x^{n+1}}{n+1} + C $$
+    In our case, $n = 2$. Applying the power rule, we get:
+    $$ \int x^2 \, dx = \frac{x^{2+1}}{2+1} + C_1 = \frac{x^3}{3} + C_1 $$
+    Note that we use $C_1$ here to distinguish it from the final constant of integration.
+
+    \item \textbf{Combine the results:}
+    Now, we multiply the result from step 3 by the constant 9 from step 2:
+    $$ 9 \int x^2 \, dx = 9 \left( \frac{x^3}{3} + C_1 \right) = 9 \cdot \frac{x^3}{3} + 9 \cdot C_1 $$
+
+    \item \textbf{Simplify the expression and the constant of integration:}
+    Simplify the numerical part and combine the constant $9C_1$ into a single constant of integration, which we denote as $C$.
+    $$ 9 \cdot \frac{x^3}{3} + 9 C_1 = 3x^3 + C $$
+
+\end{enumerate}
+
+Therefore, the integral of $(3x)^2$ is:
+$$ \int (3x)^2 \, dx = 3x^3 + C $$
+
+\end{document}
